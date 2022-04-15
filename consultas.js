@@ -108,7 +108,7 @@ const transferir = async ({ emisor, receptor, monto }) => {
         console.log('Tabla originaria del error: ', e.table);
         console.log('Restricción violada en el campo: ', e.constraint);
     }
-}
+};
 
 // CONSULTA TRANSFERENCIAS
 const consultaTran = async () => {
@@ -122,7 +122,7 @@ const consultaTran = async () => {
     } catch (error) {
         throw error;
     }
-}
+};
 
 // EXPORTANDO FUNCIONES
 module.exports = { insertar, consultar, editar, eliminar, transferir, consultaTran };
